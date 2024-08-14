@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="PageTitle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/font_pagetitle</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">6.0dip</item>
+        <item name="android:paddingEnd">35.0dip</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/font_title</item>
+        <item name="background">@drawable/button_default</item>
+        <item name="android:stateListAnimator" tools:targetApi="lollipop">@drawable/anim_button_touch</item>
+    </style>
+</resources>

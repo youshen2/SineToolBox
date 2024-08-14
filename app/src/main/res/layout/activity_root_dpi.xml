@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context="moye.sinetoolbox.Activity.root.RootDPIActivity">
+
+    <moye.sinetoolbox.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="40.0dip">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate" />
+
+                <TextView
+                    style="@style/PageTitle"
+                    android:text="@string/activity_root_dpi_title" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="自定义DPI"
+                android:textSize="14sp"
+                android:textColor="@color/font_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="输入的DPI需要大于40且小于500"
+                android:alpha="0.7"
+                android:textColor="@color/font_title" />
+
+            <EditText
+                android:id="@+id/dpiInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/list_bg"
+                android:ems="3"
+                android:inputType="number"
+                android:padding="5dp"
+                android:text="320"
+                android:textSize="13sp"
+                android:textColor="@color/font_subtitle" />
+
+            <Button
+                android:id="@+id/activity_root_dpi_diy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_default"
+                android:stateListAnimator="@drawable/anim_button_touch"
+                android:text="使用自定义DPI"
+                android:textSize="13sp"
+                android:textColor="@color/font_title" />
+        </LinearLayout>
+    </moye.sinetoolbox.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-feature android:name="android.hardware.type.watch" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name="moye.sinetoolbox.Sinetoolbox"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SineToolBox"
+        tools:targetApi="25">
+        <activity android:name="moye.sinetoolbox.dialog.RootRebootDialogActivity" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:name="moye.sinetoolbox.Activity.root.RootRebootActivity" android:exported="false" />
+        <activity android:name="moye.sinetoolbox.dialog.RemoveDialog" android:exported="false" />
+        <activity android:name="moye.sinetoolbox.Activity.root.RootShellActivity" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:name="moye.sinetoolbox.dialog.RootRemountTipActivity" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:name="moye.sinetoolbox.Activity.root.RootRemountActivity" android:exported="false" />
+        <activity android:name="moye.sinetoolbox.Activity.root.RootDPIActivity" android:exported="false" />
+        <activity android:label="更新日志" android:name="moye.sinetoolbox.Activity.about.AboutLogActivity" android:exported="true" />
+        <activity android:label="FTP服务" android:name="moye.sinetoolbox.Activity.FTPActivity" android:exported="true" />
+        <activity android:name="moye.sinetoolbox.Activity.webview.WebviewActivity" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" android:exported="false" />
+        <activity android:label="网页浏览" android:name="moye.sinetoolbox.Activity.webview.WebviewBeforeActivity" android:exported="true" />
+        <activity android:name="moye.sinetoolbox.dialog.Dialog" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:name="moye.sinetoolbox.dialog.ConfirmDialog" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:label="调试工具箱" android:name="moye.sinetoolbox.Activity.DebugActivity" android:exported="true"/>
+        <activity android:name="moye.sinetoolbox.Activity.ActivityAddActivity" android:exported="false" />
+        <activity
+            android:name="moye.sinetoolbox.Activity.MainActivity"
+            android:theme="@style/Base.Theme.SineToolBoxNoSwipe"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

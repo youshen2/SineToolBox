@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context="moye.sinetoolbox.Activity.about.AboutNewlogActivity">
+
+    <moye.sinetoolbox.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="40.0dip">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate" />
+
+                <TextView
+                    android:id="@+id/about_newlog_title"
+                    style="@style/PageTitle"
+                    android:text="@string/update_log" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/last_update_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/font_title" />
+
+            <TextView
+                android:id="@+id/last_update_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/font_describe" />
+
+            <TextView
+                android:id="@+id/last_update_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="end"
+                android:text=""
+                android:textColor="@color/font_subtitle" />
+
+            <TextView
+                android:id="@+id/update_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="下载新版本请加QQ群或前往 www.themoye.top"
+                android:textColor="@color/font_error" />
+        </LinearLayout>
+    </moye.sinetoolbox.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SineToolBox" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowSwipeToDismiss" tools:ignore="NewApi">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:textColor">@color/font_title</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="Base.Theme.SineToolBoxNoSwipe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowSwipeToDismiss" tools:ignore="NewApi">false</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:textColor">@color/font_title</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="buttonStyle">@style/ButtonStyle</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="Theme.SineToolBox" parent="Base.Theme.SineToolBox" />
+</resources>
